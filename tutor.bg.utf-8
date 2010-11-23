@@ -714,259 +714,261 @@ NOTE:  You can also read the output of an external command.  For example,
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			 Lesson 6.1: THE OPEN COMMAND
+			 Урок 6.1: КОМАНДА ЗА ОТВАРЯНЕ
 
 
- ** Type  o  to open a line below the cursor and place you in Insert mode. **
+ ** Натиснете  o  , за да отворите ред под курсора и отидете в режим Insert. **
 
-  1. Move the cursor to the line below marked --->.
+  1. Преместете курсора до реда маркиран с --->.
 
-  2. Type the lowercase letter  o  to open up a line BELOW the cursor and place
-     you in Insert mode.
+  2. Натиснете малката буква  o  , за да отворите ред ПОД курсора и отидете в
+     режим Insert.
 
-  3. Now type some text and press <ESC> to exit Insert mode.
+  3. Сега напишете някакъв текст и натиснете <ESC> , за да излезнете от режим Insert.
 
----> After typing  o  the cursor is placed on the open line in Insert mode.
+---> След натискане на  o  курсорът е на отворения ред в режим Insert.
 
-  4. To open up a line ABOVE the cursor, simply type a capital	O , rather
-     than a lowercase  o.  Try this on the line below.
-
----> Open up a line above this by typing O while the cursor is on this line.
+  4. За да отворите ред НАД курсора, просто натиснете главна буква	O , вместо малка
+     буква  o.  Опитайте това на долния ред.
+     
+---> Отворете нов ред над този като натиснете O , докато курсорът е на този ред.
 
 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Lesson 6.2: THE APPEND COMMAND
+			Урок 6.2: КОМАНДА ЗА ПРИКАЧВАНЕ
 
 
-	     ** Type  a  to insert text AFTER the cursor. **
+	     ** Натиснете  a  , за да въведете текст СЛЕД курсора. **
 
-  1. Move the cursor to the start of the line below marked --->.
+  1. Преместете курсора до началото на реда маркиран с --->.
   
-  2. Press  e  until the cursor is on the end of  li .
+  2. Натискайте  e  , докато курсорът не отиде в края на думата "ре".
 
-  3. Type an  a  (lowercase) to append text AFTER the cursor.
+  3. Натиснете  a  (малка буква) , за да прикачите текст СЛЕД курсора.
 
-  4. Complete the word like the line below it.  Press <ESC> to exit Insert
-     mode.
+  4. Довършете думата, както е в долния ред. Натиснете <ESC> , за да излезнете от 
+     режим Insert.
 
-  5. Use  e  to move to the next incomplete word and repeat steps 3 and 4.
+  5. Използвайте  e  , за да се придвижите до следващата недописана дума и повторете
+     стъпки 3 и 4.
   
----> This li will allow you to pract appendi text to a line.
----> This line will allow you to practice appending text to a line.
+---> Този ре ще ви позволи да упраж прикачв на текст към даден ред.
+---> Този ред ще ви позволи да упражните прикачването на текст към даден ред.
 
-NOTE:  a, i and A all go to the same Insert mode, the only difference is where
-       the characters are inserted.
+БЕЛЕЖКА:  a, i и A отиват в един и същ режим Insert. Единствената разлика е, къде ще 
+	      бъдат поставени новите символи.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		    Lesson 6.3: ANOTHER WAY TO REPLACE
+		    Урок 6.3: ДРУГ НАЧИН ЗА ЗАМЯНА НА ДУМИ
 
 
-      ** Type a capital  R  to replace more than one character. **
+      ** Натиснете голяма буква  R  , за да замените повече от един символ. **
 
-  1. Move the cursor to the first line below marked --->.  Move the cursor to
-     the beginning of the first  xxx .
+  1. Придвижете курсора до първия ред маркиран с --->.  Придвижете курсора до
+     началото на първото  xxx .
 
-  2. Now press  R  and type the number below it in the second line, so that it
-     replaces the xxx .
+  2. Сега натиснете  R  и напишете числото от долния ред, така, че да замените
+     xxx.
 
-  3. Press <ESC> to leave Replace mode.  Notice that the rest of the line
-     remains unmodified.
+  3. Натиснете <ESC> за да излезнете от режим Replace.  Забележете, че останалата 
+     част от реда остава непроменена.
 
-  4. Repeat the steps to replace the remaining xxx.
+  4. Повторете стъпките, за да замените и останалите xxx.
 
----> Adding 123 to xxx gives you xxx.
----> Adding 123 to 456 gives you 579.
+---> Събирайки 123 с xxx се получава xxx.
+---> Събирайки 123 с 456 се получава 579.
 
-NOTE:  Replace mode is like Insert mode, but every typed character deletes an
-       existing character.
+БЕЛЕЖКА:  Режим Replace е като режим Insert, но всеки въведен симво изтрива съществуващ
+          такъв.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Lesson 6.4: COPY AND PASTE TEXT
+			Урок 6.4: КОПИРАНЕ И ПОСТАВЯНЕ НА ТЕКСТ
 
 
-	  ** Use the  y  operator to copy text and  p  to paste it **
+	  ** Използвайте оператор  y  ,за да копирате текст и оператор  p  ,за да поставяте **
 
-  1. Go to the line marked with ---> below and place the cursor after "a)".
+  1. Отидете до реда маркиран с ---> и поставете курсора след "a)".
   
-  2. Start Visual mode with  v  and move the cursor to just before "first".
+  2. Стартирайте режим Visual с  v  и придвижете курсора точно преди "първият".
   
-  3. Type  y  to yank (copy) the highlighted text.
+  3. Натиснете  y  , за да копирате маркирания текст.
 
-  4. Move the cursor to the end of the next line:  j$
+  4. Придвижете курсора до края на следващия ред:  j$
 
-  5. Type  p  to put (paste) the text.  Then type:  a second <ESC> .
+  5. Натиснете  p  ,за да поставите(paste) текста.  После напишете:  вторият <ESC> .
 
-  6. Use Visual mode to select " item.", yank it with  y , move to the end of
-     the next line with  j$  and put the text there with  p .
+  6. Използвайте режим Visual, за да маркирате " елемент.", копирайте го с  y , отидете до 
+     края на следващия ред с  j$  и поставете текста там с  p .
 
---->  a) this is the first item.
+--->  a) това е първият елемент.
       b)
 
-  NOTE: you can also use  y  as an operator;  yw  yanks one word.
+  БЕЛЕЖКА: Може да използвате  y  като оператор;  yw  копира една дума.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			    Lesson 6.5: SET OPTION
+			    Урок 6.5: ЗАДАВАНЕ НА ОПЦИЯ
 
 
-	  ** Set an option so a search or substitute ignores case **
+	  ** Задайте опция така, че при търсене или замяна да се игнорират случаи **
 
-  1. Search for 'ignore' by entering:   /ignore  <ENTER>
-     Repeat several times by pressing  n .
+  1. Търсете за 'ignore' като въведете:   /ignore  <ENTER>
+     Повторете няколко пъти като натискате  n .
 
-  2. Set the 'ic' (Ignore case) option by entering:   :set ic
+  2. Задайте опцията 'ic' (Игнорирай случай) като въведете:   :set ic
 
-  3. Now search for 'ignore' again by pressing  n
-     Notice that Ignore and IGNORE are now also found.
+  3. Сега потърсете 'ignore' отново като натискате  n
+     Забележете, че Ignore и IGNORE също биват намерени.
 
-  4. Set the 'hlsearch' and 'incsearch' options:  :set hls is
+  4. Задайте опциите 'hlsearch' и 'incsearch':  :set hls is
 
-  5. Now type the search command again and see what happens:  /ignore <ENTER>
+  5. Сега напишете командата за търсене и вижте какво ще се случи:  /ignore <ENTER>
 
-  6. To disable ignoring case enter:  :set noic
+  6. За да изключите "Игнорирай случай", напишете:  :set noic
 
-NOTE:  To remove the highlighting of matches enter:   :nohlsearch 
-NOTE:  If you want to ignore case for just one search command, use  \c
-       in the phrase:  /ignore\c  <ENTER>
+БЕЛЕЖКА:  За да премахнете оцветяването на съвпадения, напишете:   :nohlsearch 
+БЕЛЕЖКА:  Ако искате да използвате "Игнорирай случай" за една търсеща команда, 
+          използвайте \c в командата:  /ignore\c  <ENTER>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 6 SUMMARY
+			       Урок 6 ОБОБЩЕНИЕ
 
-  1. Type  o  to open a line BELOW the cursor and start Insert mode.
-     Type  O  to open a line ABOVE the cursor.
+  1. Натиснете  o  , за да отворите ред ПОД курсора и да стартирате режим Insert.
+     Натиснете  O  , за да отворите ред НАД курсора.
 
-  2. Type  a  to insert text AFTER the cursor.
-     Type  A  to insert text after the end of the line.
+  2. Натиснете  a  , за да въведете текст СЛЕД курсора.
+     Натиснете  A  , за да въведете текст след края на реда.
 
-  3. The  e  command moves to the end of a word.
+  3. Командата  e  премества курсора в края на думата.
 
-  4. The  y  operator yanks (copies) text,  p  puts (pastes) it.
+  4. Операторът  y  копира текст,  p  го поставя (paste).
 
-  5. Typing a capital  R  enters Replace mode until  <ESC>  is pressed.
+  5. Натискайки голяма буква  R  влизате в режим Replace , докато не натиснете <ESC>.
 
-  6. Typing ":set xxx" sets the option "xxx".  Some options are:
-  	'ic' 'ignorecase'	ignore upper/lower case when searching
-	'is' 'incsearch'	show partial matches for a search phrase
-	'hls' 'hlsearch'	highlight all matching phrases
-     You can either use the long or the short option name.
+  6. Въвеждайки ":set xxx" задавате опцията "xxx".  Някой опции са:
+  	'ic' 'ignorecase'	игнорира малко/големи символи при търсене
+	'is' 'incsearch'	показва частични съвпадения за търсен израз
+	'hls' 'hlsearch'	оцветява всички съвпадащи фрази
+     Може да използвате късото или дългото име на опцията.
 
-  7. Prepend "no" to switch an option off:   :set noic
+  7. Напишете "no" , за да изключите дадена опция:   :set noic
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		       Lesson 7.1: GETTING HELP
+		       Урок 7.1: ПОЛУЧАВАНЕ НА ПОМОЩ
 
 
-		      ** Use the on-line help system **
+		      ** Използвайте онлайн системата за помощ **
 
-  Vim has a comprehensive on-line help system.  To get started, try one of
-  these three:
-	- press the <HELP> key (if you have one)
-	- press the <F1> key (if you have one)
-	- type   :help <ENTER>
+  Vim има изчерпателна онлайн помощна система. За да започнете, опитайте някоя
+  от следните три команди:
+	- натиснете <HELP> бутона (ако имате такъв)
+	- натиснете <F1> бутона (ако имате такъв)
+	- напишете  :help <ENTER>
 
-  Read the text in the help window to find out how the help works.
-  Type  CTRL-W CTRL-W   to jump from one window to another.
-  Type    :q <ENTER>    to close the help window.
+  Прочетете текста в помощния прозорец, за да разберете как работи помощната система.
+  Натиснете  CTRL-W CTRL-W   за да прескачате между прозорците.
+  Напишете    :q <ENTER>    за да затворите помощния прозорец.
 
-  You can find help on just about any subject, by giving an argument to the
-  ":help" command.  Try these (don't forget pressing <ENTER>):
+  Може да намерите помощ по почти всеки проблем като подадете аргумент на командата
+  ":help" . Опитайте тези (не забравяйте да натиснете <ENTER>):
 
 	:help w
 	:help c_CTRL-D
 	:help insert-index
 	:help user-manual
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		      Lesson 7.2: CREATE A STARTUP SCRIPT
+		      Урок 7.2: СЪЗДАВАНЕ НА СТАРТИРАЩ СКРИПТ
 
 
-			  ** Enable Vim features **
+			  ** Позволете функциите на Vim **
 
-  Vim has many more features than Vi, but most of them are disabled by
-  default.  To start using more features you have to create a "vimrc" file.
+  Vim има много повече функции от Vi, но повечето от тях са изключени по 
+  подразбиране. За да започнете да използвате повече функции, трябва да 
+  съдадете файл "vimrc".
 
-  1. Start editing the "vimrc" file.  This depends on your system:
-	:e ~/.vimrc		for Unix
-	:e $VIM/_vimrc		for MS-Windows
+  1. Почнете да редактирате своя "vimrc" файл. Това зависи от вашата система:
+	:e ~/.vimrc		за Unix
+	:e $VIM/_vimrc		за MS-Windows
 
-  2. Now read the example "vimrc" file contents:
+  2. Сега прочетете съдържанието на примерния "vimrc" файл:
 	:r $VIMRUNTIME/vimrc_example.vim
 
-  3. Write the file with:
+  3. Запишете файла с:
 	:w
 
-  The next time you start Vim it will use syntax highlighting.
-  You can add all your preferred settings to this "vimrc" file.
-  For more information type  :help vimrc-intro
+  Следващия път, когато стартирате Vim, той ще използва синтактично оцветяване.
+  Може да добавите всички предпочитани настройки в "vimrc" файла.
+  За повече информация напишете  :help vimrc-intro
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			     Lesson 7.3: COMPLETION
+			     Урок 7.3: ДОПЪЛВАНЕ
 
 
-	      ** Command line completion with CTRL-D and <TAB> **
+	      ** Допълване на команди с CTRL-D и <TAB> **
 
-  1. Make sure Vim is not in compatible mode:  :set nocp
+  1. Уверете се, че Vim не е в compatible режим:  :set nocp
 
-  2. Look what files exist in the directory:  :!ls   or  :!dir
+  2. Вижте какви файлове има в директориятаdirectory:  :!ls   or  :!dir
 
-  3. Type the start of a command:  :e
+  3. Напишете началото на команда:  :e
 
-  4. Press  CTRL-D  and Vim will show a list of commands that start with "e".
+  4. Натиснете  CTRL-D  и Vim ще ви покаже лист с команди, започващи с "e".
 
-  5. Press <TAB>  and Vim will complete the command name to ":edit".
+  5. Натиснете <TAB>  и Vim ще допълни името на командата до ":edit".
 
-  6. Now add a space and the start of an existing file name:  :edit FIL
+  6. Сега добавете една шпация и началото на името на съществуващ файл:  :edit FIL
 
-  7. Press <TAB>.  Vim will complete the name (if it is unique).
+  7. Натиснете <TAB>.  Vim ще допълни името (ако то е уникално).
 
-NOTE:  Completion works for many commands.  Just try pressing CTRL-D and
-       <TAB>.  It is especially useful for  :help .
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 7 SUMMARY
-
-
-  1. Type  :help  or press <F1> or <Help>  to open a help window.
-
-  2. Type  :help cmd  to find help on  cmd .
-
-  3. Type  CTRL-W CTRL-W  to jump to another window
-
-  4. Type  :q  to close the help window
-
-  5. Create a vimrc startup script to keep your preferred settings.
-
-  6. When typing a  :  command, press CTRL-D to see possible completions.
-     Press <TAB> to use one completion.
-
-
-
-
-
-
+БЕЛЕЖКА:  Допълването работи за много команди.  Просто опитайте, натискайки CTRL-D и
+          <TAB>.  Особено удобно е за  :help .
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			       Урок 7 ОБОБЩЕНИЕ
 
-  This concludes the Vim Tutor.  It was intended to give a brief overview of
-  the Vim editor, just enough to allow you to use the editor fairly easily.
-  It is far from complete as Vim has many many more commands.  Read the user
-  manual next: ":help user-manual".
 
-  For further reading and studying, this book is recommended:
+  1. Напишете  :help  или натиснете <F1> или <Help> , за да отворите помощен прозорец.
+
+  2. Напишете  :help cmd , за да намерите помощ за  cmd .
+
+  3. Натиснете  CTRL-W CTRL-W , за да отидете в друг прозорец.
+
+  4. Напишете  :q , за да затворите помощния прозорец.
+
+  5. Създайте vimrc стартиращ скрипт, за да запазите предпочитаните си настройки.
+
+  6. Когато въвеждате  :  команда, натиснете CTRL-D, за да видите възможните допълнения.
+     Натиснете <TAB> , за да използвате някое от допълненията.
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Така завършва урокът за Vim. Той беше предвиден да даде бърз, но достатъчен, 
+  преглед на редактора Vim, за да позволи да използвате редактора бързо и лесно.
+  Той е далеч от достатъчен и завършен, защото Vim разполага с много команди. Може 
+  да прочетете упътването за потребителя : ":help user-manual".
+
+  За повече информация, ви препоръчваме тази книга:
 	Vim - Vi Improved - by Steve Oualline
-	Publisher: New Riders
-  The first book completely dedicated to Vim.  Especially useful for beginners.
-  There are many examples and pictures.
-  See http://iccf-holland.org/click5.html
+	Издател: New Riders
+  Първата книга посветена изцяло на Vim.  Особено полезна за начинаещи.
+  Там ще намерите много примери и картинки.
+  Виж http://iccf-holland.org/click5.html
 
-  This book is older and more about Vi than Vim, but also recommended:
+  Тази книга е по-стара и е повече за Vi, а не за Vim, но ви я препоръчваме също:
 	Learning the Vi Editor - by Linda Lamb
-	Publisher: O'Reilly & Associates Inc.
-  It is a good book to get to know almost anything you want to do with Vi.
-  The sixth edition also includes information on Vim.
+	Издател: O'Reilly & Associates Inc.
+  Това е полезна книга, ако искате да научите всичко, което може да правите с Vi.
+  Шестото издание на книгата съдържа информация и за Vim.
 
-  This tutorial was written by Michael C. Pierce and Robert K. Ware,
+  Този урок беше написан от Michael C. Pierce и Robert K. Ware,
   Colorado School of Mines using ideas supplied by Charles Smith,
   Colorado State University.  E-mail: bware@mines.colorado.edu.
 
-  Modified for Vim by Bram Moolenaar.
+  Модифицирано за Vim от Bram Moolenaar.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
