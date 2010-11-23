@@ -648,24 +648,24 @@ NOTE: This is very useful in debugging a program with unmatched parentheses!
 		    Урок 5.3: ИЗБИРАНЕ НА ТЕКСТ ЗА ЗАПИСВАНЕ
 
 
-	** To save part of the file, type  v  motion  :w FILENAME **
+	** За да запазите част от файла, натиснете  v  motion  :w ИМЕ_НА_ФАЙЛА **
 
-  1. Move the cursor to this line.
+  1. Преместете курсора до този ред.
 
-  2. Press  v  and move the cursor to the fifth item below.  Notice that the
-     text is highlighted.
+  2. Натиснете v  и преместете курсора до петия елемент отдолу. Забележете, че
+     текста е оцветен.
 
-  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appear.
+  3. Натиснете символа  :  .  Отдолу на екрана ще се появи  :'<,'> .
 
-  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify
-     that you see  :'<,'>w TEST  before you press Enter.
+  4. Напишете  w TEST  , където TEST е името на файл, който не съществува все още.
+     Уверете се, че виждате  :'<,'>w TEST  преди да натиснете Enter.
 
-  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls
-     to see it.  Do not remove it yet!  We will use it in the next lesson.
+  5. Vim ще запише маркираните редове във файла TEST.  Използвайте  :!dir  или  !ls
+     за да го видите.  Не го премехвайте все още! Ще го използваме в следващия урок.
 
-NOTE:  Pressing  v  starts Visual selection.  You can move the cursor around
-       to make the selection bigger or smaller.  Then you can use an operator
-       to do something with the text.  For example,  d  deletes the text.
+БЕЛЕЖКА:  Натискайки  v  стартирате режим Visual. Може да местите курсора наоколо,
+          за да маркирате още от текста.  След това може да използвате оператор,
+          за да направите нещо с текста. Например d ще изтрие текста.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		   Lesson 5.4: RETRIEVING AND MERGING FILES
