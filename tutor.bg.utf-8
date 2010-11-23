@@ -853,118 +853,119 @@ NOTE:  If you want to ignore case for just one search command, use  \c
 		       Урок 7.1: ПОЛУЧАВАНЕ НА ПОМОЩ
 
 
-		      ** Use the on-line help system **
+		      ** Използвайте онлайн системата за помощ **
 
-  Vim has a comprehensive on-line help system.  To get started, try one of
-  these three:
-	- press the <HELP> key (if you have one)
-	- press the <F1> key (if you have one)
-	- type   :help <ENTER>
+  Vim има изчерпателна онлайн помощна система. За да започнете, опитайте някоя
+  от следните три команди:
+	- натиснете <HELP> бутона (ако имате такъв)
+	- натиснете <F1> бутона (ако имате такъв)
+	- напишете  :help <ENTER>
 
-  Read the text in the help window to find out how the help works.
-  Type  CTRL-W CTRL-W   to jump from one window to another.
-  Type    :q <ENTER>    to close the help window.
+  Прочетете текста в помощния прозорец, за да разберете как работи помощната система.
+  Натиснете  CTRL-W CTRL-W   за да прескачате между прозорците.
+  Напишете    :q <ENTER>    за да затворите помощния прозорец.
 
-  You can find help on just about any subject, by giving an argument to the
-  ":help" command.  Try these (don't forget pressing <ENTER>):
+  Може да намерите помощ по почти всеки проблем като подадете аргумент на командата
+  ":help" . Опитайте тези (не забравяйте да натиснете <ENTER>):
 
 	:help w
 	:help c_CTRL-D
 	:help insert-index
 	:help user-manual
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		      Lesson 7.2: CREATE A STARTUP SCRIPT
+		      Урок 7.2: СЪЗДАВАНЕ НА СТАРТИРАЩ СКРИПТ
 
 
-			  ** Enable Vim features **
+			  ** Позволете функциите на Vim **
 
-  Vim has many more features than Vi, but most of them are disabled by
-  default.  To start using more features you have to create a "vimrc" file.
+  Vim има много повече функции от Vi, но повечето от тях са изключени по 
+  подразбиране. За да започнете да използвате повече функции, трябва да 
+  съдадете файл "vimrc".
 
-  1. Start editing the "vimrc" file.  This depends on your system:
-	:e ~/.vimrc		for Unix
-	:e $VIM/_vimrc		for MS-Windows
+  1. Почнете да редактирате своя "vimrc" файл. Това зависи от вашата система:
+	:e ~/.vimrc		за Unix
+	:e $VIM/_vimrc		за MS-Windows
 
-  2. Now read the example "vimrc" file contents:
+  2. Сега прочетете съдържанието на примерния "vimrc" файл:
 	:r $VIMRUNTIME/vimrc_example.vim
 
-  3. Write the file with:
+  3. Запишете файла с:
 	:w
 
-  The next time you start Vim it will use syntax highlighting.
-  You can add all your preferred settings to this "vimrc" file.
-  For more information type  :help vimrc-intro
+  Следващия път, когато стартирате Vim, той ще използва синтактично оцветяване.
+  Може да добавите всички предпочитани настройки в "vimrc" файла.
+  За повече информация напишете  :help vimrc-intro
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			     Lesson 7.3: COMPLETION
+			     Урок 7.3: ДОПЪЛВАНЕ
 
 
-	      ** Command line completion with CTRL-D and <TAB> **
+	      ** Допълване на команди с CTRL-D и <TAB> **
 
-  1. Make sure Vim is not in compatible mode:  :set nocp
+  1. Уверете се, че Vim не е в compatible режим:  :set nocp
 
-  2. Look what files exist in the directory:  :!ls   or  :!dir
+  2. Вижте какви файлове има в директориятаdirectory:  :!ls   or  :!dir
 
-  3. Type the start of a command:  :e
+  3. Напишете началото на команда:  :e
 
-  4. Press  CTRL-D  and Vim will show a list of commands that start with "e".
+  4. Натиснете  CTRL-D  и Vim ще ви покаже лист с команди, започващи с "e".
 
-  5. Press <TAB>  and Vim will complete the command name to ":edit".
+  5. Натиснете <TAB>  и Vim ще допълни името на командата до ":edit".
 
-  6. Now add a space and the start of an existing file name:  :edit FIL
+  6. Сега добавете една шпация и началото на името на съществуващ файл:  :edit FIL
 
-  7. Press <TAB>.  Vim will complete the name (if it is unique).
+  7. Натиснете <TAB>.  Vim ще допълни името (ако то е уникално).
 
-NOTE:  Completion works for many commands.  Just try pressing CTRL-D and
-       <TAB>.  It is especially useful for  :help .
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 7 SUMMARY
-
-
-  1. Type  :help  or press <F1> or <Help>  to open a help window.
-
-  2. Type  :help cmd  to find help on  cmd .
-
-  3. Type  CTRL-W CTRL-W  to jump to another window
-
-  4. Type  :q  to close the help window
-
-  5. Create a vimrc startup script to keep your preferred settings.
-
-  6. When typing a  :  command, press CTRL-D to see possible completions.
-     Press <TAB> to use one completion.
-
-
-
-
-
-
+БЕЛЕЖКА:  Допълването работи за много команди.  Просто опитайте, натискайки CTRL-D и
+       <TAB>.  Особено удобно е за  :help .
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			       Урок 7 ОБОБЩЕНИЕ
 
-  This concludes the Vim Tutor.  It was intended to give a brief overview of
-  the Vim editor, just enough to allow you to use the editor fairly easily.
-  It is far from complete as Vim has many many more commands.  Read the user
-  manual next: ":help user-manual".
 
-  For further reading and studying, this book is recommended:
+  1. Напишете  :help  или натиснете <F1> или <Help> , за да отворите помощен прозорец.
+
+  2. Напишете  :help cmd , за да намерите помощ за  cmd .
+
+  3. Натиснете  CTRL-W CTRL-W , за да отидете в друг прозорец.
+
+  4. Напишете  :q , за да затворите помощния прозорец.
+
+  5. Създайте vimrc стартиращ скрипт, за да запазите предпочитаните си настройки.
+
+  6. Когато въвеждате  :  команда, натиснете CTRL-D, за да видите възможните допълнения.
+     Натиснете <TAB> , за да използвате някое от допълненията.
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Така завършва урокът за Vim. Той беше предвиден да даде бърз, но достатъчен, 
+  преглед на редактора Vim, за да позволи да използвате редактора бързо и лесно.
+  Той е далеч от достатъчен и завършен, защото Vim разполага с много команди. Може 
+  да прочетете упътването за потребителя : ":help user-manual".
+
+  За повече информация, ви препоръчваме тази книга:
 	Vim - Vi Improved - by Steve Oualline
-	Publisher: New Riders
-  The first book completely dedicated to Vim.  Especially useful for beginners.
-  There are many examples and pictures.
-  See http://iccf-holland.org/click5.html
+	Издател: New Riders
+  Първата книга посветена изцяло на Vim.  Особено полезна за начинаещи.
+  Там ще намерите много примери и картинки.
+  Виж http://iccf-holland.org/click5.html
 
-  This book is older and more about Vi than Vim, but also recommended:
+  Тази книга е по-стара и е повече за Vi, а не за Vim, но ви я препоръчваме също:
 	Learning the Vi Editor - by Linda Lamb
-	Publisher: O'Reilly & Associates Inc.
-  It is a good book to get to know almost anything you want to do with Vi.
-  The sixth edition also includes information on Vim.
+	Издател: O'Reilly & Associates Inc.
+  Това е полезна книга, ако искате да научите всичко, което може да правите с Vi.
+  Шестото издание на книгата съдържа информация и за Vim.
 
-  This tutorial was written by Michael C. Pierce and Robert K. Ware,
+  Този урок беше написан от Michael C. Pierce и Robert K. Ware,
   Colorado School of Mines using ideas supplied by Charles Smith,
   Colorado State University.  E-mail: bware@mines.colorado.edu.
 
-  Modified for Vim by Bram Moolenaar.
+  Модифицирано за Vim от Bram Moolenaar.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
