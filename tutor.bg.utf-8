@@ -84,109 +84,109 @@
 
 ---> Краавата скоччи ннаад луунатта.
 
-  5. Сега, след като този ред е верен, преминете към Урок Lesson 1.4.
+  5. Сега, след като този ред е верен, преминете към Урок 1.4.
 
 BELECKA: Като обработвате урока, не се опитвайте да запомните, учете с използване.
 
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		      Lesson 1.4: TEXT EDITING - INSERTION
+		      Урок 1.4: РЕДАКТИРАНЕ НА ТЕКСТ - ВЪВЕЖДАНЕ
 
 
-			** Press  i  to insert text. **
+			** Натиснете i , за да въведете текст. **
 
-  1. Move the cursor to the first line below marked --->.
+  1. Преместете курсора до реда отбелязан с --->.
 
-  2. To make the first line the same as the second, move the cursor on top
-     of the first character AFTER where the text is to be inserted.
+  2. За да направите първия ред еднакъв с втория, преместете курсора над първия
+     символ, СЛЕД който искате да въведете текста.
 
-  3. Press  i  and type in the necessary additions.
+  3. Натиснете  i  и въведете необходимите допълнения.
 
-  4. As each error is fixed press <ESC> to return to Normal mode.
-     Repeat steps 2 through 4 to correct the sentence.
+  4. След като всекяка грешка е редактирана, натиснете <ESC>, за да се върнете в
+     нормален режим. Повторете стъпките от 2 до 4, за да коригирате изречението.
 
----> There is text misng this .
----> There is some text missing from this line.
+---> Там има текст, липсва този .
+---> Там има текст, който липсва от този ред.
 
-  5. When you are comfortable inserting text move to lesson 1.5.
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		     Lesson 1.5: TEXT EDITING - APPENDING
+  5. Когато се чувствате удобно с въвеждането на текст, преминете към урок 1.5.
 
 
-			** Press  A  to append text. **
-
-  1. Move the cursor to the first line below marked --->.
-     It does not matter on what character the cursor is in that line.
-
-  2. Press  A  and type in the necessary additions.
-
-  3. As the text has been appended press <ESC> to return to Normal mode.
-
-  4. Move the cursor to the second line marked ---> and repeat 
-     steps 2 and 3 to correct this sentence.
-
----> There is some text missing from th
-     There is some text missing from this line.
----> There is also some text miss
-     There is also some text missing here.
-
-  5. When you are comfortable appending text move to lesson 1.6.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		     Lesson 1.6: EDITING A FILE
+		     Урок 1.5: РЕДАКТИРАНЕ НА ТЕКСТ - ДОБАВЯНЕ
 
-		    ** Use  :wq  to save a file and exit. **
 
-  !! NOTE: Before executing any of the steps below, read this entire lesson!!
+			** Натиснете A, за да добавите текст. **
 
-  1. Exit this tutor as you did in lesson 1.2:  :q!
-     Or, if you have access to another terminal, do the following there.
+  1. Преместете курсора до първия ред маркиран с --->.
+     Няма значение над кой символ се намира куросорът на този ред.
 
-  2. At the shell prompt type this command:  vim tutor <ENTER>
-     'vim' is the command to start the Vim editor, 'tutor' is the name of the
-     file you wish to edit.  Use a file that may be changed.
+  2. Натиснете  A  и въведете необходимите добавки.
 
-  3. Insert and delete text as you learned in the previous lessons.
+  3. След като текста бъде добвен, натиснете <ESC>, за да се върнете в нормален режим.
 
-  4. Save the file with changes and exit Vim with:  :wq  <ENTER>
+  4. Преместете курсора до втория ред маркиран с ---> и повторете 
+     стъпките от 2 и 3, за да коригирате това изречение.
 
-  5. If you have quit vimtutor in step 1 restart the vimtutor and move down to
-     the following summary.
+---> Там има текст, който липсва от то
+     Там има текст, който липсва от този ред.
+---> Там също има текст, липс
+     Там също има текст, лиспващ от тук.
 
-  6. After reading the above steps and understanding them: do it.
+  5. Когато се чувствате удобно с добавянето на текст, преминете към урок 1.6.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		     Урок 1.6: РЕДАКТИРАНЕ НА ФАЙЛ
+
+		    ** Използвайте  :wq  за записване на файла и излизане. **
+
+  !! БЕЛЕЖКА: Преди изпълняване на някоя от стъпките по-долу, прочетете целия урок!!
+
+  1. Излезте от уроците, както направихте в урок 1.2:  :q!
+     Или ако имате достъп до друг терминал, изпълнете там следното.
+
+  2. В шел промпта въведете тази команда:  vim tutor <ENTER>
+     'vim' е командата за стартиране на Vim редактора, 'tutor' е името на
+     файла, който искате да редактирате.  Използвйате файл, който може да бъде променен.
+
+  3. Въведетеждайте и трийте текст, както научихте в предишните уроци.
+
+  4. Запишете файла с промените и излезте от Vim с:  :wq  <ENTER>
+
+  5. Ако сте излезли от vimtutor в стъпка 1 рестартирайте vimtutor и преминете към
+     следващото обобщение.
+
+  6. След като прочетете горните стъпки и ги разберете: изпълнете ги.
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 1 SUMMARY
+			       Урок 1 ОБОБЩЕНИЕ
 
 
-  1. The cursor is moved using either the arrow keys or the hjkl keys.
-	 h (left)	j (down)       k (up)	    l (right)
+  1. Курсора се придвижва, използвайки стрелките от клавиатурата или hjkl клавишите.
+	 h (наляво)	j (надолу)       k (нагоре)	    l (надясно)
 
-  2. To start Vim from the shell prompt type:  vim FILENAME <ENTER>
+  2. За да стартирате Vim от терминала въвеждате:  vim FILENAME <ENTER>
 
-  3. To exit Vim type:	   <ESC>   :q!	 <ENTER>  to trash all changes.
-	     OR type:	   <ESC>   :wq	 <ENTER>  to save the changes.
+  3. За да излезете от Vim въвеждате:	   <ESC>   :q!	 <ENTER>  за забравяне на всички промени.
+	                   ИЛИ въвеждате:	   <ESC>   :wq	 <ENTER>  за запазване на промените.
 
-  4. To delete the character at the cursor type:  x
+  4. За да изтриете символ под курсора натискате:  x
 
-  5. To insert or append text type:
-	 i   type inserted text   <ESC>		insert before the cursor
-	 A   type appended text   <ESC>         append after the line
+  5. За въвеждане или добавяне на текст натискате:
+	 i   въведен текст   <ESC>		въвежда преди курсора
+	 A   добавен текст   <ESC>      добавя в края на реда
 
-NOTE: Pressing <ESC> will place you in Normal mode or will cancel
-      an unwanted and partially completed command.
+БЕЛЕЖКА: Натискайки <ESC> ще бъдете отведени в Нормален режим или ще откаже
+         нежелани или отчасти приключили команди.
 
-Now continue with Lesson 2.
+Сега продължете с Урок 2.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Lesson 2.1: DELETION COMMANDS
+			Урок 2.1: КОМАНДИ ЗА ИЗТРИВАНЕ
 
 
-		       ** Type  dw  to delete a word. **
+		       ** Натиснете  dw  за да изтриете дума. **
 
   1. Press  <ESC>  to make sure you are in Normal mode.
 
