@@ -25,68 +25,68 @@
 			Урок 1.1:  ПРИДВИЖВАНЕ НА КУРСОРА
 
 
-   ** To move the cursor, press the h,j,k,l keys as indicated. **
+   ** За да придвижите курсора, натиснете клавишите h,j,k,l както е указано. **
 	     ^
-	     k		    Hint:  The h key is at the left and moves left.
-       < h	 l >		   The l key is at the right and moves right.
-	     j			   The j key looks like a down arrow.
+	     k		    Съвет: Клавишът h е отляво и придивжва наляво.
+       < h	 l >		   Клавишът l е отдясно и движи надясно.
+	     j			   Клавишът j прилича на нарисувана стрелка.
 	     v
-  1. Move the cursor around the screen until you are comfortable.
+  1. Местете курсора по екрана, докато се почувствате удобно.
 
-  2. Hold down the down key (j) until it repeats.
-     Now you know how to move to the next lesson.
+  2. Задръжте клавишът за надолу (j) докато се повтори.
+     Сега знаете как да преминете към следващия урок.
 
-  3. Using the down key, move to Lesson 1.2.
+  3. Използвайки клавиша надолу преминете към Урок 1.2
 
-NOTE: If you are ever unsure about something you typed, press <ESC> to place
-      you in Normal mode.  Then retype the command you wanted.
+БЕЛЕЖКА: Ако не сте сигурни за нещо, което сте написали, натиснете <ESC>, за да
+        се върнете в Нормален режим. След това въведете отново командата, която искате.
 
-NOTE: The cursor keys should also work.  But using hjkl you will be able to
-      move around much faster, once you get used to it.  Really!
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			    Lesson 1.2: EXITING VIM
-
-
-  !! NOTE: Before executing any of the steps below, read this entire lesson!!
-
-  1. Press the <ESC> key (to make sure you are in Normal mode).
-
-  2. Type:	:q! <ENTER>.
-     This exits the editor, DISCARDING any changes you have made.
-
-  3. When you see the shell prompt, type the command that got you into this
-     tutor.  That would be:	vimtutor <ENTER>
-
-  4. If you have these steps memorized and are confident, execute steps
-     1 through 3 to exit and re-enter the editor.
-
-NOTE:  :q! <ENTER>  discards any changes you made.  In a few lessons you
-       will learn how to save the changes to a file.
-
-  5. Move the cursor down to Lesson 1.3.
-
+БЕЛЕЖКА: Стрелките от клавиатурата също работят. Но използвайки hjkl ще се движите
+        в документа по-бъзо, след като свикнете.  Наистина!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		     Lesson 1.3: TEXT EDITING - DELETION
+			    Урок 1.2: ИЗЛИЗАНЕ ОТ VIM
 
 
-	   ** Press  x  to delete the character under the cursor. **
+  !! БЕЛЕЖКА: Преди да изпълните, която и да е стъпка по-долу, прочетете целия урок!!
 
-  1. Move the cursor to the line below marked --->.
+  1. Натиснете клавиша <ESC> (за да сте сигурни, че сте в Нормален режим).
 
-  2. To fix the errors, move the cursor until it is on top of the
-     character to be deleted.
+  2. Въведете:	:q! <ENTER>.
+     Така излизате от редактора, ЗАБРАВЯЙКИ всички промени, които сте направили.
 
-  3. Press the	x  key to delete the unwanted character.
+  3. Когато видите шел промпта, въведете командата, с която сте стартирали този урок.
+     Това би трябвало да бъде:	vimtutor <ENTER>
 
-  4. Repeat steps 2 through 4 until the sentence is correct.
+  4. Ако сте запомнили тези стъпки и сте сигурни, изпълнете стъпките от.
+     1 до 3 за да излезете и стартирате редактора.
 
----> The ccow jumpedd ovverr thhe mooon.
+БЕЛЕЖКА:  :q! <ENTER>  забравя всички промени, които сте направили. След няколко урока
+       ще научите как да запазвате промените във файла.
 
-  5. Now that the line is correct, go on to Lesson 1.4.
+  5. Преместете курсора надолу до Урок 1.3.
 
-NOTE: As you go through this tutor, do not try to memorize, learn by usage.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		     Урок 1.3: РЕДАКТИРАНЕ НА ТЕКС - ИЗТРИВАНЕ
+
+
+	   ** Натиснете  x  , за да изтриете символа под курсора. **
+
+  1. Преместете курсора до реда отблязан с --->.
+
+  2. За да коригирате грешките, преместете курсора, докато той не застане над 
+     символа, който ще бъде изтрит.
+
+  3. Натиснете клавиша	x  , за да изтриете нежелание символ.
+
+  4. Повторете стъпките от 2 до 4, докато изречението не е правилно.
+
+---> Краавата скоччи ннаад луунатта.
+
+  5. Сега, след като този ред е верен, преминете към Урок Lesson 1.4.
+
+BELECKA: Като обработвате урока, не се опитвайте да запомните, учете с използване.
 
 
 
