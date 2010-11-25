@@ -484,50 +484,50 @@ Now go on to the next lesson.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		  Lesson 4.1: CURSOR LOCATION AND FILE STATUS
+		  Урок 4.1: ПОЗИЦИЯ НА КУРСОРА И СТАТУС НА ФАЙЛА
 
-  ** Type CTRL-G to show your location in the file and the file status.
-     Type  G  to move to a line in the file. **
+  ** Натиснете CTRL-G ,за да видите къде се намира курсора ви и да видите статуса
+     на файла. Натиснете  G  , за да отидете на даден ред във файла. **
 
-  NOTE: Read this entire lesson before executing any of the steps!!
+  БЕЛЕЖКА: Прочетете целия урок преди да изпълнявате някоя от стъпките!!!
 
-  1. Hold down the Ctrl key and press  g .  We call this CTRL-G.
-     A message will appear at the bottom of the page with the filename and the
-     position in the file.  Remember the line number for Step 3.
+  1. Задръжте бутона Ctrl и натиснете  g .  Наричаме това CTRL-G.
+     В дъното на екрана ще се появи съобщение, съдържащо името на файла и позицията
+     във файла.  Запомнете номера на реда за стъпка 3.
 
-NOTE:  You may see the cursor position in the lower right corner of the screen
-       This happens when the 'ruler' option is set (see  :help 'ruler'  )
+БЕЛЕЖКА:  Може да видите позицията на курсора в долния десен ъгъл на екрана.
+          Това се получава, когато опцията 'ruler' е включена (вижте  :help 'ruler')
 
-  2. Press  G  to move you to the bottom of the file.
-     Type  gg  to move you to the start of the file.
+  2. Натиснете  G  , за да отидете в края на файла.
+     Напишете  gg  , за да отидетеto в началото на файла.
 
-  3. Type the number of the line you were on and then  G .  This will
-     return you to the line you were on when you first pressed CTRL-G.
+  3. Напишете номера на реда, на който бяхте, и натиснете G . Това ще ви върне на 
+     реда, на който бяхте, когато натиснахте CTRL-G.
 
-  4. If you feel confident to do this, execute steps 1 through 3.
+  4. Ако се чувствате готови да направите това, изпълнете стъпки от 1 до 3.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Lesson 4.2: THE SEARCH COMMAND
+			Урок 4.2: КОМАНДАТА ЗА ТЪРСЕНЕ
 
 
-     ** Type  /  followed by a phrase to search for the phrase. **
+     ** Напишете  /  последвано от израз, за да потърсите израза. **
 
-  1. In Normal mode type the  /  character.  Notice that it and the cursor
-     appear at the bottom of the screen as with the  :	command.
+  1. В режим Normal , напишете символа /  (наклонена черта на дясно). Забележете,
+     че тя и курсора ще се появят в дъното на екрана, както при командата   :  .
 
-  2. Now type 'errroor' <ENTER>.  This is the word you want to search for.
+  2. Сега нашишете 'грррешшка' <ENTER>.  Това е думата, която искате да потърсите.
 
-  3. To search for the same phrase again, simply type  n .
-     To search for the same phrase in the opposite direction, type  N .
+  3. За да потърсите същия израз отново, просто натиснете  n .
+     За да потърсите същия израз, но в обратна посока, натиснете  N .
 
-  4. To search for a phrase in the backward direction, use  ?  instead of  / .
+  4. За да потърсите израз в обратна посока, използвайте  ?  вместо  / .
 
-  5. To go back to where you came from press  CTRL-O  (Keep Ctrl down while
-     pressing the letter o).  Repeat to go back further.  CTRL-I goes forward.
+  5. За да се върнете, където сте били, натиснете  CTRL-O  (Задръжте Ctrl докато
+     натискате буквата o).  Повторете, за да се върнете още по-назад. С CTRL-I отивате напред.
 
---->  "errroor" is not the way to spell error;  errroor is an error.
-NOTE: When the search reaches the end of the file it will continue at the
-      start, unless the 'wrapscan' option has been reset.
+--->  "грррешшка" не е правилният начин да напишете грешка;  грррешшка е една грешка.
+БЕЛЕЖКА: Когато търсенето стигне до края на файла, то ще започне от началото му, докато 
+         опцията 'wrapscan' не бъде рестартирана.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		   Lesson 4.3: MATCHING PARENTHESES SEARCH
