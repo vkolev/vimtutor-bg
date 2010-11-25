@@ -668,49 +668,47 @@ NOTE: This is very useful in debugging a program with unmatched parentheses!
           за да направите нещо с текста. Например d ще изтрие текста.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		   Lesson 5.4: RETRIEVING AND MERGING FILES
+		   Урок 5.4: ЗАРЕЖДАНЕ И СЛИВАНЕ НА ФАЙЛОВЕ
 
 
-       ** To insert the contents of a file, type  :r FILENAME  **
+       ** За да вмъкнете съдържанието на файл, напишете  :r ИМЕ_НА_ФАЙЛА  **
 
-  1. Place the cursor just above this line.
+  1. Поставете курсора над този ред.
 
-NOTE:  After executing Step 2 you will see text from Lesson 5.3.  Then move
-       DOWN to see this lesson again.
+БЕЛЕЖКА:  След като изпълните стъпка 2, ще видите текста от урок 5.3. Просто отидете
+          НАДОЛУ, за да видите този урок отново.
 
-  2. Now retrieve your TEST file using the command   :r TEST   where TEST is
-     the name of the file you used.
-     The file you retrieve is placed below the cursor line.
+  2. Сега зарадете вашият файл TEST като използвате командата  :r TEST  , където TEST
+     е името на файла, който използвате.
+     Файлът, който сте заредили се намира под реда, на който е курсорът.
 
-  3. To verify that a file was retrieved, cursor back and notice that there
-     are now two copies of Lesson 5.3, the original and the file version.
+  3. За да се уверите, че файлът е зареден, отидете назад и вижте, че има две копия на
+     урок 5.3, оригиналният и версията на файла.
 
-NOTE:  You can also read the output of an external command.  For example,
-       :r !ls  reads the output of the ls command and puts it below the
-       cursor.
+БЕЛЕЖКА:  Може също да прочетете изхода на външна команда. Например 
+          :r !ls  чете изхода на командата ls и го копира под позицията на курсора.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 5 SUMMARY
+			       Урок 5 ОБОБЩЕНИЕ
 
 
-  1.  :!command  executes an external command.
+  1.  :!команда  изпълнява външна команда.
 
-      Some useful examples are:
-	 (MS-DOS)	  (Unix)
-	  :!dir		   :!ls		   -  shows a directory listing.
-	  :!del FILENAME   :!rm FILENAME   -  removes file FILENAME.
+      Няколко полезни примера са:
+	  (MS-DOS)	       (Unix)
+	  :!dir		       :!ls		   -  показва съдържанието на директория.
+	  :!del ИМЕ_НА_ФАЙЛА   :!rm ИМЕ_НА_ФАЙЛА   -  премахва файла ИМЕ_НА_ФАЙЛА.
 
-  2.  :w FILENAME  writes the current Vim file to disk with name FILENAME.
+  2.  :w ИМЕ_НА_ФАЙЛА записва използваният Vim файл на диска с името ИМЕ_НА_ФАЙЛА.
 
-  3.  v  motion  :w FILENAME  saves the Visually selected lines in file
-      FILENAME.
+  3.  v  движение  :w ИМЕ_НА_ФАЙЛА запазва маркираните редове в режим Visualy във файла
+      ИМЕ_НА_ФАЙЛА.
 
-  4.  :r FILENAME  retrieves disk file FILENAME and puts it below the
-      cursor position.
+  4.  :r ИМЕ_НА_ФАЙЛА  зарежда файла ИМЕ_НА_ФАЙЛА от диска и го поставя под текущата 
+      позиция на курсора.
 
-  5.  :r !dir  reads the output of the dir command and puts it below the
-      cursor position.
+  5.  :r !dir  прочита изхода на командата dir и го поставя под текущата позиция на курсора.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
