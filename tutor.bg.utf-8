@@ -484,50 +484,50 @@ Now go on to the next lesson.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		  Lesson 4.1: CURSOR LOCATION AND FILE STATUS
+		  Урок 4.1: ПОЗИЦИЯ НА КУРСОРА И СТАТУС НА ФАЙЛА
 
-  ** Type CTRL-G to show your location in the file and the file status.
-     Type  G  to move to a line in the file. **
+  ** Натиснете CTRL-G ,за да видите къде се намира курсора ви и да видите статуса
+     на файла. Натиснете  G  , за да отидете на даден ред във файла. **
 
-  NOTE: Read this entire lesson before executing any of the steps!!
+  БЕЛЕЖКА: Прочетете целия урок преди да изпълнявате някоя от стъпките!!!
 
-  1. Hold down the Ctrl key and press  g .  We call this CTRL-G.
-     A message will appear at the bottom of the page with the filename and the
-     position in the file.  Remember the line number for Step 3.
+  1. Задръжте бутона Ctrl и натиснете  g .  Наричаме това CTRL-G.
+     В дъното на екрана ще се появи съобщение, съдържащо името на файла и позицията
+     във файла.  Запомнете номера на реда за стъпка 3.
 
-NOTE:  You may see the cursor position in the lower right corner of the screen
-       This happens when the 'ruler' option is set (see  :help 'ruler'  )
+БЕЛЕЖКА:  Може да видите позицията на курсора в долния десен ъгъл на екрана.
+          Това се получава, когато опцията 'ruler' е включена (вижте  :help 'ruler')
 
-  2. Press  G  to move you to the bottom of the file.
-     Type  gg  to move you to the start of the file.
+  2. Натиснете  G  , за да отидете в края на файла.
+     Напишете  gg  , за да отидетеto в началото на файла.
 
-  3. Type the number of the line you were on and then  G .  This will
-     return you to the line you were on when you first pressed CTRL-G.
+  3. Напишете номера на реда, на който бяхте, и натиснете G . Това ще ви върне на 
+     реда, на който бяхте, когато натиснахте CTRL-G.
 
-  4. If you feel confident to do this, execute steps 1 through 3.
+  4. Ако се чувствате готови да направите това, изпълнете стъпки от 1 до 3.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Lesson 4.2: THE SEARCH COMMAND
+			Урок 4.2: КОМАНДАТА ЗА ТЪРСЕНЕ
 
 
-     ** Type  /  followed by a phrase to search for the phrase. **
+     ** Напишете  /  последвано от израз, за да потърсите израза. **
 
-  1. In Normal mode type the  /  character.  Notice that it and the cursor
-     appear at the bottom of the screen as with the  :	command.
+  1. В режим Normal , напишете символа /  (наклонена черта на дясно). Забележете,
+     че тя и курсора ще се появят в дъното на екрана, както при командата   :  .
 
-  2. Now type 'errroor' <ENTER>.  This is the word you want to search for.
+  2. Сега нашишете 'грррешшка' <ENTER>.  Това е думата, която искате да потърсите.
 
-  3. To search for the same phrase again, simply type  n .
-     To search for the same phrase in the opposite direction, type  N .
+  3. За да потърсите същия израз отново, просто натиснете  n .
+     За да потърсите същия израз, но в обратна посока, натиснете  N .
 
-  4. To search for a phrase in the backward direction, use  ?  instead of  / .
+  4. За да потърсите израз в обратна посока, използвайте  ?  вместо  / .
 
-  5. To go back to where you came from press  CTRL-O  (Keep Ctrl down while
-     pressing the letter o).  Repeat to go back further.  CTRL-I goes forward.
+  5. За да се върнете, където сте били, натиснете  CTRL-O  (Задръжте Ctrl докато
+     натискате буквата o).  Повторете, за да се върнете още по-назад. С CTRL-I отивате напред.
 
---->  "errroor" is not the way to spell error;  errroor is an error.
-NOTE: When the search reaches the end of the file it will continue at the
-      start, unless the 'wrapscan' option has been reset.
+--->  "грррешшка" не е правилният начин да напишете грешка;  грррешшка е една грешка.
+БЕЛЕЖКА: Когато търсенето стигне до края на файла, то ще започне от началото му, докато 
+         опцията 'wrapscan' не бъде рестартирана.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		   Lesson 4.3: MATCHING PARENTHESES SEARCH
@@ -648,69 +648,67 @@ NOTE: This is very useful in debugging a program with unmatched parentheses!
 		    Урок 5.3: ИЗБИРАНЕ НА ТЕКСТ ЗА ЗАПИСВАНЕ
 
 
-	** To save part of the file, type  v  motion  :w FILENAME **
+	** За да запазите част от файла, натиснете  v  движение  :w ИМЕ_НА_ФАЙЛА **
 
-  1. Move the cursor to this line.
+  1. Преместете курсора до този ред.
 
-  2. Press  v  and move the cursor to the fifth item below.  Notice that the
-     text is highlighted.
+  2. Натиснете v  и преместете курсора до петия елемент отдолу. Забележете, че
+     текста е оцветен.
 
-  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appear.
+  3. Натиснете символа  :  .  Отдолу на екрана ще се появи  :'<,'> .
 
-  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify
-     that you see  :'<,'>w TEST  before you press Enter.
+  4. Напишете  w TEST  , където TEST е името на файл, който не съществува все още.
+     Уверете се, че виждате  :'<,'>w TEST  преди да натиснете Enter.
 
-  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls
-     to see it.  Do not remove it yet!  We will use it in the next lesson.
+  5. Vim ще запише маркираните редове във файла TEST.  Използвайте  :!dir  или  !ls
+     за да го видите.  Не го премехвайте все още! Ще го използваме в следващия урок.
 
-NOTE:  Pressing  v  starts Visual selection.  You can move the cursor around
-       to make the selection bigger or smaller.  Then you can use an operator
-       to do something with the text.  For example,  d  deletes the text.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		   Lesson 5.4: RETRIEVING AND MERGING FILES
-
-
-       ** To insert the contents of a file, type  :r FILENAME  **
-
-  1. Place the cursor just above this line.
-
-NOTE:  After executing Step 2 you will see text from Lesson 5.3.  Then move
-       DOWN to see this lesson again.
-
-  2. Now retrieve your TEST file using the command   :r TEST   where TEST is
-     the name of the file you used.
-     The file you retrieve is placed below the cursor line.
-
-  3. To verify that a file was retrieved, cursor back and notice that there
-     are now two copies of Lesson 5.3, the original and the file version.
-
-NOTE:  You can also read the output of an external command.  For example,
-       :r !ls  reads the output of the ls command and puts it below the
-       cursor.
-
+БЕЛЕЖКА:  Натискайки  v  стартирате режим Visual. Може да местите курсора наоколо,
+          за да маркирате още от текста.  След това може да използвате оператор,
+          за да направите нещо с текста. Например d ще изтрие текста.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 5 SUMMARY
+		   Урок 5.4: ЗАРЕЖДАНЕ И СЛИВАНЕ НА ФАЙЛОВЕ
 
 
-  1.  :!command  executes an external command.
+       ** За да вмъкнете съдържанието на файл, напишете  :r ИМЕ_НА_ФАЙЛА  **
 
-      Some useful examples are:
-	 (MS-DOS)	  (Unix)
-	  :!dir		   :!ls		   -  shows a directory listing.
-	  :!del FILENAME   :!rm FILENAME   -  removes file FILENAME.
+  1. Поставете курсора над този ред.
 
-  2.  :w FILENAME  writes the current Vim file to disk with name FILENAME.
+БЕЛЕЖКА:  След като изпълните стъпка 2, ще видите текста от урок 5.3. Просто отидете
+          НАДОЛУ, за да видите този урок отново.
 
-  3.  v  motion  :w FILENAME  saves the Visually selected lines in file
-      FILENAME.
+  2. Сега зарадете вашият файл TEST като използвате командата  :r TEST  , където TEST
+     е името на файла, който използвате.
+     Файлът, който сте заредили се намира под реда, на който е курсорът.
 
-  4.  :r FILENAME  retrieves disk file FILENAME and puts it below the
-      cursor position.
+  3. За да се уверите, че файлът е зареден, отидете назад и вижте, че има две копия на
+     урок 5.3, оригиналният и версията на файла.
 
-  5.  :r !dir  reads the output of the dir command and puts it below the
-      cursor position.
+БЕЛЕЖКА:  Може също да прочетете изхода на външна команда. Например 
+          :r !ls  чете изхода на командата ls и го копира под позицията на курсора.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			       Урок 5 ОБОБЩЕНИЕ
+
+
+  1.  :!команда  изпълнява външна команда.
+
+      Няколко полезни примера са:
+	  (MS-DOS)	       (Unix)
+	  :!dir		       :!ls		   -  показва съдържанието на директория.
+	  :!del ИМЕ_НА_ФАЙЛА   :!rm ИМЕ_НА_ФАЙЛА   -  премахва файла ИМЕ_НА_ФАЙЛА.
+
+  2.  :w ИМЕ_НА_ФАЙЛА записва използваният Vim файл на диска с името ИМЕ_НА_ФАЙЛА.
+
+  3.  v  движение  :w ИМЕ_НА_ФАЙЛА запазва маркираните редове в режим Visualy във файла
+      ИМЕ_НА_ФАЙЛА.
+
+  4.  :r ИМЕ_НА_ФАЙЛА  зарежда файла ИМЕ_НА_ФАЙЛА от диска и го поставя под текущата 
+      позиция на курсора.
+
+  5.  :r !dir  прочита изхода на командата dir и го поставя под текущата позиция на курсора.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
