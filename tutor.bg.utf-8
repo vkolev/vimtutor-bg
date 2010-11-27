@@ -530,73 +530,73 @@ Now go on to the next lesson.
          опцията 'wrapscan' не бъде рестартирана.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		   Lesson 4.3: MATCHING PARENTHESES SEARCH
+		   Урок 4.3: РАБОТА С ОТВАРЯЩИ И ЗАТВАРЯЩИ СКОБИ
 
 
-	      ** Type  %  to find a matching ),], or } . **
+	      ** Напишете  %  , за да намерите съответстващата ),], или } . **
 
-  1. Place the cursor on any (, [, or { in the line below marked --->.
+  1. Поставете курсора на някоя от (, [, или { в реда маркиран по-долу --->.
 
-  2. Now type the  %  character.
+  2. Сега натиснете символа  %  (процент).
 
-  3. The cursor will move to the matching parenthesis or bracket.
+  3. Курсорът ще се премести до съответната затваряща скоба.
 
-  4. Type  %  to move the cursor to the other matching bracket.
+  4. Натиснете  %  , за да отидете до отварящата скоба.
 
-  5. Move the cursor to another (,),[,],{ or } and see what  %  does.
+  5. Преместете курсора до друга (,),[,],{ или } и вижте какво прави  % .
 
----> This ( is a test line with ('s, ['s ] and {'s } in it. ))
-
-
-NOTE: This is very useful in debugging a program with unmatched parentheses!
+---> Това е ( е пробен ред с (, [ ] и { } в него. ))
 
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		      Lesson 4.4: THE SUBSTITUTE COMMAND
+БЕЛЕЖКА: Това е много полезно при дебъгване на програма с незатворени скоби!
 
 
-	** Type  :s/old/new/g  to substitute 'new' for 'old'. **
-
-  1. Move the cursor to the line below marked --->.
-
-  2. Type  :s/thee/the <ENTER> .  Note that this command only changes the
-     first occurrence of "thee" in the line.
-
-  3. Now type  :s/thee/the/g .  Adding the  g  flag means to substitute
-     globally in the line, change all occurrences of "thee" in the line.
-
----> thee best time to see thee flowers is in thee spring.
-
-  4. To change every occurrence of a character string between two lines,
-     type   :#,#s/old/new/g    where #,# are the line numbers of the range
-                               of lines where the substitution is to be done.
-     Type   :%s/old/new/g      to change every occurrence in the whole file.
-     Type   :%s/old/new/gc     to find every occurrence in the whole file,
-     			       with a prompt whether to substitute or not.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			       Lesson 4 SUMMARY
+		      Урок 4.4: КОМАНДА ЗА ЗАМЯНА
 
 
-  1. CTRL-G  displays your location in the file and the file status.
-             G  moves to the end of the file.
-     number  G  moves to that line number.
-            gg  moves to the first line.
+	** Напишете  :s/стар/нов/g  , за да замените 'нов' със 'стар'. **
 
-  2. Typing  /	followed by a phrase searches FORWARD for the phrase.
-     Typing  ?	followed by a phrase searches BACKWARD for the phrase.
-     After a search type  n  to find the next occurrence in the same direction
-     or  N  to search in the opposite direction.
-     CTRL-O takes you back to older positions, CTRL-I to newer positions.
+  1. Преместете курсора до реда маркиран с --->.
 
-  3. Typing  %	while the cursor is on a (,),[,],{, or } goes to its match.
+  2. Напишете :s/вашшето/вашето <ENTER> .  Забележете, че тази команда ще замени
+     първото съвпадение на "вашшето" , което се намира на реда.
 
-  4. To substitute new for the first old in a line type    :s/old/new
-     To substitute new for all 'old's on a line type	   :s/old/new/g
-     To substitute phrases between two line #'s type	   :#,#s/old/new/g
-     To substitute all occurrences in the file type	   :%s/old/new/g
-     To ask for confirmation each time add 'c'		   :%s/old/new/gc
+  3. Сега напишете  :s/вашшето/вашето/g .  Добавянето на буквата  g  означава, че 
+     искате да замените думата "вашшето" глобално за целия ред.
+
+---> вашшето време да видите вашшето цвете е през вашшето лято.
+
+  4. За да замените всяко съвпадение на даден низ между два реда,
+     напишете   :#,#s/стар/нов/g    където #,# са номерата на редовете, където ще
+                                    се извърши подмяната на низоветеo.
+     Напишете   :%s/стар/нов/g      , за да замените всяко съвпадение в целия файл.
+     Напишете   :%s/стар/нов/gc     , за да намерите всяко съвпадение в целия файл,
+     			                    с възможност за замяна.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			       Урок 4 ОБОБЩЕНИЕ
+
+
+  1. CTRL-G  показва вашето местоположение във файла и статуса на файла.
+             G  ви премества в края на файла.
+     номер   G  ви премества до реда с такъв номер.
+            gg  ви премества на първия ред.
+
+  2. Натискайки  /	последвано от фраза, търси НАПРЕД за фразата.
+     Натискайки  ?	последвано от фраза, търси НАЗАД за фразата.
+     След търсене натиснете  n  , за да намерите следващото съвпадение в тази
+     посока или N  , за да търсите в обратната посока.
+     CTRL-O ви отвежда до старата ви позиция, CTRL-I до новата ви позиция.
+
+  3. Натискайки  %	, докато курсора е на (,),[,],{, или } отива до затварящата скоба.
+
+  4. За да замените първото "стар" с "нов" на реда, напишете    :s/стар/нов
+     За да замените всички "стар" с "нов" на реда, напишете	   :s/стар/нов/g
+     За да замените фрази между два реда с номера # напишете   :#,#s/стар/нов/g
+     За да замените всички съвпадения във файла напишете   :%s/стар/нов/g
+     За да ви пита всеки път за потвърждение, добавете 'c'   :%s/стар/нов/gc
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		Урок 5.1: КАК ДА ИЗПЪЛНИМ ВЪНШНА КОМАНДА
